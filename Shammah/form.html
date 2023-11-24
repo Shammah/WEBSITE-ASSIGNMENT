@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>KABARAK UNIVERSITY FORM</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f4f4f4;
+                margin: 5px;
+                padding:10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            
+            }
+
+            form{
+                background-color: #fff;
+                width: max-content;
+                display: inline-block;
+                padding: 20px;
+                border-radius: 16px;
+                box-shadow:0 0 10px rgba(0, 0, 0, 0.4);
+            
+            }
+            label{
+                display:flex;
+                margin-bottom: 10px;
+    
+            
+            }
+            input   [type="text"]
+            input[type="number"] {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+            }
+            
+            select{
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+
+            }
+
+            input[type="checkbox"]{
+                margin-right: 8px;
+            
+            }
+
+        
+            button{
+                background: #606aa2;;
+                color: #fff;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            buton:hover {
+                background-color: #606aa1;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <form action="#" method="post">
+        <label for="name" >Name:</label>
+        <input type="text" id="name" name="name"required>
+        
+        <label for="registration number">Registration Number:</label>
+        <input type="text" id="registrationNumber" name="registrationNumber" required>
+
+        <label for="course">Course Selection:</label>
+        <select id="course" name="course" required>
+            <option value="computerScience">Computer Science</option>
+            <option value="informationTechnology">Information Technology</option>
+            <option value="massCommunication">Mass Communication</option>
+            <option value="engineering">Engineering</option>
+        </select>
+
+        <label for="currentSemester">Current Semester:</label>
+        <input type="number" id="currentSemester" name="currentSemester" required>
+
+        <label for="gender" >Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male" >Male</label>
+        <input type="radio" id="female" name="gender" value="female" checked>
+        <label for="female" >Female</label>
+
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+       
+        <label for="country"> Country:</label>
+        <select id="country" name="country">
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+
+        </select>
+
+        <button type="submit"> Submit</button>
+
+    </form>
+    </body>
+</html>
